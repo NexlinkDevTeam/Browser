@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+            android:title="General">            
+        <CheckBoxPreference
+                android:key="blockerWhitelistEnabled"
+                android:title="Enable Whitelist"
+                android:defaultValue="true"/>
+        <EditTextPreference
+                android:key="blockerWhitelist"
+                android:title="Whitelist" 
+                android:defaultValue=""/>
+    </PreferenceCategory>           
+</PreferenceScreen>         
