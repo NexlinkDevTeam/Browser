@@ -1,0 +1,38 @@
+https://github.com/android/platform_packages_apps_browser
+
+(Added classes were put in package com.nexlink)
+
+---Modifications---
+*Replace all references to "android.provider.Browser" to "com.nexlink.Browser"
+*Replace all references to "android.provider.BrowserContract" to "com.nexlink.BrowserContract"
+^(The above two files were taken from AOSP)
+*Replace all instances of "com.android.browser" with "com.nexlink.browser"
+
+Browser.java
+*Expose app context globally
+
+Controller.java
+*openPreferences - Lock with password prompt
+*shouldOverrideUrlLoading - Return true if url is blocked
+*openTab - Prevent loading and immediately close tab if blocked 
+
+Tab.java
+*shouldOverrideUrlLoading - Return true if url is blocked
+*loadUrl - Prevent if url is blocked
+
+res/values/strings.xml
+*homepage_base - Set default homepage
+
+BrowserPreferencesPage.java
+*add header/fragment to whitelist preferences and to known header list
+
+Strings.xml
+*change application name to Browser Mod (Or something to distinguish it from stock) 
+
+Manifest.xml
+*add minSdk as 14
+
+
+--Backport to android 4.3--
+BrowserWebviewFactory.java
+*check version >=19 before setWebContentsDebuggingEnabled
