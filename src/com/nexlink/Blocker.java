@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
 
 import android.preference.PreferenceManager;
 
-import com.android.browser.Browser;
-import com.android.browser.BrowserSettings;
+import com.nexlink.browser.Browser;
+import com.nexlink.browser.BrowserSettings;
 
 public class Blocker {
 	protected static Boolean whitelistEnabled;

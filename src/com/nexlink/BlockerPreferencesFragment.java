@@ -27,8 +27,8 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 
-import com.android.browser.Browser;
-import com.android.browser.R;
+import com.nexlink.browser.Browser;
+import com.nexlink.browser.R;
 
 //An extension to put in the browser settings
 public class BlockerPreferencesFragment extends PreferenceFragment{
