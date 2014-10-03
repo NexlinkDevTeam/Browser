@@ -17,6 +17,8 @@
 package com.nexlink.browser;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.Browser;
+import com.nexlink.mods.BrowserContract;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -39,8 +41,6 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PaintDrawable;
 import android.net.Uri;
 import android.os.Message;
-import com.nexlink.Browser;
-import com.nexlink.BrowserContract;
 
 public class BookmarkUtils {
     private final static String LOGTAG = "BookmarkUtils";

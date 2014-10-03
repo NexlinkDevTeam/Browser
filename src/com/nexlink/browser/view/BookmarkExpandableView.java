@@ -18,7 +18,6 @@ package com.nexlink.browser.view;
 
 import android.content.Context;
 import android.database.DataSetObserver;
-import com.nexlink.BrowserContract;
 import android.util.AttributeSet;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -35,6 +34,7 @@ import android.widget.TextView;
 import com.nexlink.browser.BreadCrumbView;
 import com.nexlink.browser.BrowserBookmarksAdapter;
 import com.nexlink.browser.R;
+import com.nexlink.mods.BrowserContract;
 import com.android.internal.view.menu.MenuBuilder;
 
 import org.json.JSONException;

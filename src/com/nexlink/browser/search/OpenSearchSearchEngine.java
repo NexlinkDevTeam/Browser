@@ -16,6 +16,7 @@
 package com.nexlink.browser.search;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.Browser;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -35,7 +36,6 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.net.http.AndroidHttpClient;
 import android.os.Bundle;
-import com.nexlink.Browser;
 import android.text.TextUtils;
 import android.util.Log;
 

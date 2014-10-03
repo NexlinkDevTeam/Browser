@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.nexlink;
+package com.nexlink.mods;
 
 import java.util.ArrayList;
 import java.util.Arrays;

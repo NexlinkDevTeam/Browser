@@ -17,6 +17,9 @@
 package com.nexlink.browser;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.Browser;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Combined;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -39,9 +42,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import com.nexlink.Browser;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Combined;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;

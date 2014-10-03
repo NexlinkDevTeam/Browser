@@ -29,7 +29,6 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.preference.PreferenceActivity;
-import com.nexlink.BrowserContract.Bookmarks;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +44,7 @@ import android.widget.TextView;
 
 import com.nexlink.browser.R;
 import com.nexlink.browser.WebStorageSizeManager;
+import com.nexlink.mods.BrowserContract.Bookmarks;
 
 import java.util.HashMap;
 import java.util.HashSet;

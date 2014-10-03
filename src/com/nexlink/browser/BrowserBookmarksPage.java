@@ -36,8 +36,6 @@ import android.graphics.BitmapFactory.Options;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Accounts;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -53,6 +51,8 @@ import com.nexlink.browser.R;
 import com.nexlink.browser.provider.BrowserProvider2;
 import com.nexlink.browser.view.BookmarkExpandableView;
 import com.nexlink.browser.view.BookmarkExpandableView.BookmarkContextMenuInfo;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Accounts;
 
 import org.json.JSONException;
 import org.json.JSONObject;

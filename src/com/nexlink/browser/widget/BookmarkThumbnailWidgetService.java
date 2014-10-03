@@ -29,8 +29,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
 import android.net.Uri;
 import android.os.Binder;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Bookmarks;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
@@ -39,6 +37,8 @@ import android.widget.RemoteViewsService;
 import com.nexlink.browser.BrowserActivity;
 import com.nexlink.browser.R;
 import com.nexlink.browser.provider.BrowserProvider2;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Bookmarks;
 
 import java.io.File;
 import java.io.FilenameFilter;

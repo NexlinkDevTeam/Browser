@@ -19,6 +19,8 @@ package com.nexlink.browser;
 import com.nexlink.browser.R;
 import com.nexlink.browser.addbookmark.FolderSpinner;
 import com.nexlink.browser.addbookmark.FolderSpinnerAdapter;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Accounts;
 
 import android.app.Activity;
 import android.app.LoaderManager;
@@ -41,8 +43,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Accounts;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.KeyEvent;

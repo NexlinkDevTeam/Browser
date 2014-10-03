@@ -1,4 +1,4 @@
-package com.nexlink;
+package com.nexlink.mods;
 
 /*
  * Copyright (C) 2010 The Android Open Source Project

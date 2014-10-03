@@ -18,9 +18,9 @@
 package com.nexlink.browser;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.Browser;
 
 import android.content.Context;
-import com.nexlink.Browser;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;

@@ -25,7 +25,6 @@ import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
-import com.nexlink.BrowserContract.Accounts;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
@@ -34,6 +33,7 @@ import android.widget.ListView;
 import com.nexlink.browser.AddBookmarkPage.BookmarkAccount;
 import com.nexlink.browser.R;
 import com.nexlink.browser.provider.BrowserProvider2;
+import com.nexlink.mods.BrowserContract.Accounts;
 
 public class BookmarkWidgetConfigure extends ListActivity
         implements OnClickListener, LoaderCallbacks<Cursor> {

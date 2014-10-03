@@ -20,7 +20,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import com.nexlink.BrowserContract.Bookmarks;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +30,7 @@ import android.widget.TextView;
 import com.nexlink.browser.R;
 import com.nexlink.browser.util.ThreadedCursorAdapter;
 import com.nexlink.browser.view.BookmarkContainer;
+import com.nexlink.mods.BrowserContract.Bookmarks;
 
 public class BrowserBookmarksAdapter extends
         ThreadedCursorAdapter<BrowserBookmarksAdapterItem> {

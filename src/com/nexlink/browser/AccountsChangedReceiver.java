@@ -23,9 +23,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Accounts;
-import com.nexlink.BrowserContract.Bookmarks;
+
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Accounts;
+import com.nexlink.mods.BrowserContract.Bookmarks;
+
 import android.text.TextUtils;
 
 public class AccountsChangedReceiver extends BroadcastReceiver {

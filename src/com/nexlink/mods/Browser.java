@@ -1,4 +1,4 @@
-package com.nexlink;
+package com.nexlink.mods;
 
 /*
  * Copyright (C) 2006 The Android Open Source Project
@@ -16,6 +16,11 @@ package com.nexlink;
  * limitations under the License.
  */
 
+import com.nexlink.mods.BrowserContract.Bookmarks;
+import com.nexlink.mods.BrowserContract.Combined;
+import com.nexlink.mods.BrowserContract.History;
+import com.nexlink.mods.BrowserContract.Searches;
+
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -27,10 +32,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
-import com.nexlink.BrowserContract.Bookmarks;
-import com.nexlink.BrowserContract.Combined;
-import com.nexlink.BrowserContract.History;
-import com.nexlink.BrowserContract.Searches;
+
 import android.util.Log;
 import android.webkit.WebIconDatabase;
 

@@ -27,11 +27,11 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.History;
 import android.util.Log;
 
 import com.nexlink.browser.provider.BrowserProvider2.Thumbnails;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.History;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.BlockingQueue;
@@ -253,7 +253,7 @@ public class DataController {
                     cr.update(ContentUris.withAppendedId(History.CONTENT_URI, c.getLong(0)),
                             values, null, null);
                 } else {
-                    com.nexlink.Browser.truncateHistory(cr);
+                    com.nexlink.mods.Browser.truncateHistory(cr);
                     ContentValues values = new ContentValues();
                     values.put(History.URL, url);
                     values.put(History.VISITS, 1);

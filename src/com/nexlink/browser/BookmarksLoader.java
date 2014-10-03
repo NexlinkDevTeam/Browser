@@ -19,7 +19,8 @@ package com.nexlink.browser;
 import android.content.Context;
 import android.content.CursorLoader;
 import android.net.Uri;
-import com.nexlink.BrowserContract.Bookmarks;
+
+import com.nexlink.mods.BrowserContract.Bookmarks;
 
 public class BookmarksLoader extends CursorLoader {
     public static final String ARG_ACCOUNT_TYPE = "acct_type";

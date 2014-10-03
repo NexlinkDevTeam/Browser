@@ -28,7 +28,6 @@ import android.net.Uri;
 import android.nfc.NfcAdapter;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import com.nexlink.Browser;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -36,6 +35,7 @@ import android.widget.EditText;
 
 import com.nexlink.browser.UI.ComboViews;
 import com.nexlink.browser.search.SearchEngine;
+import com.nexlink.mods.Browser;
 import com.android.common.Search;
 
 import java.util.HashMap;

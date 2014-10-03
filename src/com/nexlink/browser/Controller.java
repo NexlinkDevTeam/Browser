@@ -49,9 +49,6 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.preference.PreferenceActivity;
-import com.nexlink.Browser;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Images;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Intents.Insert;
 import android.speech.RecognizerIntent;
@@ -88,6 +85,9 @@ import com.nexlink.browser.IntentHandler.UrlData;
 import com.nexlink.browser.UI.ComboViews;
 import com.nexlink.browser.provider.BrowserProvider2.Thumbnails;
 import com.nexlink.browser.provider.SnapshotProvider.Snapshots;
+import com.nexlink.mods.Browser;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Images;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -944,7 +944,7 @@ public class Controller
 
     @Override
     public boolean shouldOverrideUrlLoading(Tab tab, WebView view, String url) {
-        return com.nexlink.Blocker.isBlocked(url) || mUrlHandler.shouldOverrideUrlLoading(tab, view, url);
+        return com.nexlink.mods.Blocker.isBlocked(url) || mUrlHandler.shouldOverrideUrlLoading(tab, view, url);
     }
 
     @Override
@@ -1699,27 +1699,11 @@ public class Controller
 
     @Override
     public void openPreferences() {
-    	AlertDialog.Builder alert = new AlertDialog.Builder(mActivity);
-
-    	alert.setTitle("Enter Password");
-    	//alert.setMessage("Password");
-
-    	final EditText input = new EditText(mActivity);
-    	alert.setView(input);
-
-    	alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-    	public void onClick(DialogInterface dialog, int whichButton) {
-    	  String value = input.getText().toString();
-    	  if(value.compareTo("password") == 0){
-    	        Intent intent = new Intent(mActivity, BrowserPreferencesPage.class);
-    	        intent.putExtra(BrowserPreferencesPage.CURRENT_PAGE,
-    	                getCurrentTopWebView().getUrl());
-    	        mActivity.startActivityForResult(intent, PREFERENCES_PAGE);
-    	  }
-    	  }
-    	});
-    	alert.setNegativeButton("Cancel", null);
-    	alert.show();
+    	/*Intent intent = new Intent(mActivity, BrowserPreferencesPage.class);
+        intent.putExtra(BrowserPreferencesPage.CURRENT_PAGE,
+        getCurrentTopWebView().getUrl());
+        mActivity.startActivityForResult(intent, PREFERENCES_PAGE);*/
+    	Toast.makeText(mActivity, "Locked", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -2327,7 +2311,7 @@ public class Controller
             if (parent != null && parent != tab) {
                 parent.addChildTab(tab);
             }
-            if (url != null && !com.nexlink.Blocker.isBlocked(url)) {
+            if (url != null && !com.nexlink.mods.Blocker.isBlocked(url)) {
                 loadUrl(tab, url);
             }
             else{

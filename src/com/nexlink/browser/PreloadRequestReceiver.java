@@ -21,7 +21,9 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import com.nexlink.Browser;
+
+import com.nexlink.mods.Browser;
+
 import android.util.Log;
 
 import java.util.HashMap;

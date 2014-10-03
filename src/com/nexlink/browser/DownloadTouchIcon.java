@@ -34,8 +34,10 @@ import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Message;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Images;
+
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Images;
+
 import android.webkit.WebView;
 
 import java.io.ByteArrayOutputStream;

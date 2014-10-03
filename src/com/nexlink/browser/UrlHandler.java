@@ -25,7 +25,6 @@ import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import com.nexlink.Browser;
 import android.util.Log;
 import android.webkit.WebView;
 
@@ -34,6 +33,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.Browser;
 
 /**
  *

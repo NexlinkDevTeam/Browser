@@ -388,10 +388,10 @@ class Tab implements PictureListener {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             if (!mDisableOverrideUrlLoading && mInForeground) {
-                return com.nexlink.Blocker.isBlocked(url) || mWebViewController.shouldOverrideUrlLoading(Tab.this,
+                return com.nexlink.mods.Blocker.isBlocked(url) || mWebViewController.shouldOverrideUrlLoading(Tab.this,
                         view, url);
             } else {
-                return com.nexlink.Blocker.isBlocked(url);
+                return com.nexlink.mods.Blocker.isBlocked(url);
             }
         }
 
@@ -1008,7 +1008,7 @@ class Tab implements PictureListener {
         }
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            return com.nexlink.Blocker.isBlocked(url) || mClient.shouldOverrideUrlLoading(view, url);
+            return com.nexlink.mods.Blocker.isBlocked(url) || mClient.shouldOverrideUrlLoading(view, url);
         }
         @Override
         public void onReceivedSslError(WebView view, SslErrorHandler handler,
@@ -1761,7 +1761,7 @@ class Tab implements PictureListener {
     }
 
     public void loadUrl(String url, Map<String, String> headers) {
-        if (mMainView != null && !com.nexlink.Blocker.isBlocked(url)) {
+        if (mMainView != null && !com.nexlink.mods.Blocker.isBlocked(url)) {
             mPageLoadProgress = INITIAL_PROGRESS;
             mInPageLoad = true;
             mCurrentState = new PageState(mContext, false, url, null);

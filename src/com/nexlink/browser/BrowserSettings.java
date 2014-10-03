@@ -27,7 +27,6 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Message;
 import android.preference.PreferenceManager;
-import com.nexlink.Browser;
 import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.webkit.CookieManager;
@@ -47,6 +46,7 @@ import com.nexlink.browser.homepages.HomeProvider;
 import com.nexlink.browser.provider.BrowserProvider;
 import com.nexlink.browser.search.SearchEngine;
 import com.nexlink.browser.search.SearchEngines;
+import com.nexlink.mods.Browser;
 
 import java.lang.ref.WeakReference;
 import java.util.Iterator;

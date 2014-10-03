@@ -25,7 +25,7 @@ import android.view.MenuItem;
 import com.nexlink.browser.R;
 import com.nexlink.browser.preferences.BandwidthPreferencesFragment;
 import com.nexlink.browser.preferences.DebugPreferencesFragment;
-import com.nexlink.BlockerPreferencesFragment;
+import com.nexlink.mods.BlockerPreferencesFragment;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -115,7 +115,7 @@ public class BrowserPreferencesPage extends PreferenceActivity {
             "com.nexlink.browser.preferences.AdvancedPreferencesFragment",
             "com.nexlink.browser.preferences.BandwidthPreferencesFragment",
             "com.nexlink.browser.preferences.LabPreferencesFragment",
-            "com.nexlink.BlockerPreferencesFragment"));
+            "com.nexlink.mods.BlockerPreferencesFragment"));
 
     @Override
     protected boolean isValidFragment(String fragmentName) {

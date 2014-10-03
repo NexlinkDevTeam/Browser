@@ -26,9 +26,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Combined;
-import com.nexlink.BrowserContract.Images;
 import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebIconDatabase;
@@ -37,6 +34,9 @@ import android.widget.Toast;
 import java.io.ByteArrayOutputStream;
 
 import com.nexlink.browser.R;
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Combined;
+import com.nexlink.mods.BrowserContract.Images;
 
 /**
  *  This class is purely to have a common place for adding/deleting bookmarks.

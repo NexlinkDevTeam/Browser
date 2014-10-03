@@ -3,8 +3,8 @@ https://github.com/android/platform_packages_apps_browser
 (Added classes were put in package com.nexlink)
 
 ---Modifications---
-*Replace all references to "android.provider.Browser" to "com.nexlink.Browser"
-*Replace all references to "android.provider.BrowserContract" to "com.nexlink.BrowserContract"
+*Replace all references to "android.provider.Browser" to "com.nexlink.mods.Browser"
+*Replace all references to "android.provider.BrowserContract" to "com.nexlink.mods.BrowserContract"
 ^(The above two files were taken from AOSP)
 *Replace all instances of "com.android.browser" with "com.nexlink.browser"
 

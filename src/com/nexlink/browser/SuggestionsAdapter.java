@@ -21,7 +21,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
-import com.nexlink.BrowserContract;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -37,6 +36,7 @@ import android.widget.TextView;
 import com.nexlink.browser.R;
 import com.nexlink.browser.provider.BrowserProvider2.OmniboxSuggestions;
 import com.nexlink.browser.search.SearchEngine;
+import com.nexlink.mods.BrowserContract;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -60,9 +60,7 @@
                    android:backupAgent=".BrowserBackupAgent"
                    android:hardwareAccelerated="true"
                    android:taskAffinity="android.task.browser" >
-                   
-        <meta-data android:name="nexlink_mdm_settings" android:value="com.nexlink.browser/com.nexlink.browser.BrowserPreferencesPage" />
-        
+                           
          <provider android:name=".provider.BrowserProvider2"
                   android:authorities="com.nexlink.browser;browser2"
                   android:multiprocess="false"
@@ -172,11 +170,13 @@
             </intent-filter>
 
         </activity>
-
-        <activity android:name="BrowserPreferencesPage" android:label="@string/menu_preferences">
+<!--android:label="@string/menu_preferences"-->
+        <activity android:name="BrowserPreferencesPage"  android:label="Browser Mod">
             <intent-filter>
-               <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
-               <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.nexlink.action.LAUNCH_MDM_SETTINGS" />
+                <category android:name="com.nexlink.category.MDM_SETTINGS" />
+              <!--<action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+               <category android:name="android.intent.category.DEFAULT" />-->
             </intent-filter>
         </activity>
 

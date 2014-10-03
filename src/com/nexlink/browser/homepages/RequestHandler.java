@@ -22,14 +22,14 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.MergeCursor;
 import android.net.Uri;
-import com.nexlink.BrowserContract.Bookmarks;
-import com.nexlink.BrowserContract.History;
 import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 
 import com.nexlink.browser.R;
 import com.nexlink.browser.homepages.Template.ListEntityIterator;
+import com.nexlink.mods.BrowserContract.Bookmarks;
+import com.nexlink.mods.BrowserContract.History;
 
 import java.io.File;
 import java.io.IOException;

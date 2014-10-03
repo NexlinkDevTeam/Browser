@@ -26,7 +26,9 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
-import com.nexlink.Browser;
+
+import com.nexlink.mods.Browser;
+
 import android.text.TextUtils;
 import android.util.Log;
 

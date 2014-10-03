@@ -22,8 +22,10 @@ import android.app.backup.BackupDataOutput;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.os.ParcelFileDescriptor;
-import com.nexlink.BrowserContract;
-import com.nexlink.BrowserContract.Bookmarks;
+
+import com.nexlink.mods.BrowserContract;
+import com.nexlink.mods.BrowserContract.Bookmarks;
+
 import android.util.Log;
 
 import java.io.DataInputStream;

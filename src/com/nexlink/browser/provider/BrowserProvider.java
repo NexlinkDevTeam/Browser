@@ -36,8 +36,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
 import android.os.Process;
 import android.preference.PreferenceManager;
-import com.nexlink.Browser;
-import com.nexlink.Browser.BookmarkColumns;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
@@ -45,6 +43,8 @@ import android.util.Patterns;
 import com.nexlink.browser.BrowserSettings;
 import com.nexlink.browser.R;
 import com.nexlink.browser.search.SearchEngine;
+import com.nexlink.mods.Browser;
+import com.nexlink.mods.Browser.BookmarkColumns;
 
 import java.io.File;
 import java.io.FilenameFilter;
