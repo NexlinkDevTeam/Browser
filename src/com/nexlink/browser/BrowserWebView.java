@@ -16,16 +16,15 @@
 
 package com.nexlink.browser;
 
+import java.util.Map;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.View;
 import android.webkit.WebChromeClient;
-import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
-import java.util.Map;
 
 /**
  * Manage WebView scroll events

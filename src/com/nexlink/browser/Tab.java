@@ -16,6 +16,15 @@
 
 package com.nexlink.browser;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.nio.ByteBuffer;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Vector;
+import java.util.regex.Pattern;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -38,12 +47,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
-import android.security.KeyChain;
-import android.security.KeyChainAliasCallback;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewStub;
 import android.webkit.BrowserDownloadListener;
@@ -62,26 +68,9 @@ import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.webkit.WebView.PictureListener;
 import android.webkit.WebViewClient;
-import android.widget.CheckBox;
-import android.widget.Toast;
 
-import com.nexlink.browser.R;
 import com.nexlink.browser.TabControl.OnThumbnailUpdatedListener;
 import com.nexlink.browser.homepages.HomeProvider;
-import com.nexlink.browser.provider.SnapshotProvider.Snapshots;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.ByteBuffer;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.UUID;
-import java.util.Vector;
-import java.util.regex.Pattern;
-import java.util.zip.GZIPOutputStream;
 
 /**
  * Class for maintaining Tabs with a main WebView and a subwindow.
